@@ -21,7 +21,7 @@ public class LinkedList {
 	}
 	public void addFirst(Object input) {
 		Node newNode= new Node(input);// 객체화
-		newNode.next= head; //새로운 노드의 다음은 현재 해드가 지정하고있는 노드
+		newNode.next= head; //새로운 노드의 다음은 현재 해드가 지정하고있는 노드1
 		head = newNode; // 해드를 새로운 노드로 바꿈
 		size++;
 		if(head.next==null) {
