@@ -119,5 +119,16 @@ public class LinkedList {
 		Node temp = node(k);
 		return temp.data;
 	}
+	public Object indexOf(Object data) { //data 와 일치하는 인텍스값을 리턴함
+		Node temp= head;
+		int index = 0;
+		while(temp.next!=data) {
+			temp=temp.next;
+			if(temp==null)
+			{return -1;
+			}
+		}
+		return index;	
+	}
 	
 }
