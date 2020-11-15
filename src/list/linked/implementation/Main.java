@@ -10,8 +10,12 @@ public class Main {
 		numbers.addFirst(10);
 		numbers.add(1, 25);
 		numbers.remove(2);
-		
-		System.out.println(numbers);
+		LinkedList.ListIterator i = numbers.listIterator();
+		System.out.println(i.next());
+		System.out.println(i.next());
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
 		
 		
 	}
